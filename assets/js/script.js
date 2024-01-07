@@ -29,7 +29,7 @@ function displayWeatherData(data) {
     console.log(data)
     cityName.textContent = data.name;
     currentDate.textContent = ` (${todaysDate})`;
-    weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather icon">`;
+    weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather icon">`;
     currentTemp.textContent = `${data.main.temp} \u00B0F`;
     currentWind.textContent = `${data.wind.speed} MPH`;
     currentHumidity.textContent = `${data.main.humidity} %`;
@@ -57,7 +57,7 @@ function createForecastDayElement(dayData) {
     if (iconCode.endsWith('n')) {
         iconCode = iconCode.slice(0, -1) + 'd';
     }
-    iconElement.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+    iconElement.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     iconElement.alt = 'Weather icon';
 
     const tempElement = document.createElement('p');
