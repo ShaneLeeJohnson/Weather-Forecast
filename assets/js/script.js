@@ -46,12 +46,13 @@ function displayForecast(data) {
 
 function createForecastDayElement(dayData) {
     const forecastDay = document.createElement('div');
-    forecastDay.classList.add('forecast-day', 'col');
+    forecastDay.classList.add('forecast-day', 'col-12', 'col-lg-2');
 
     const dateElement = document.createElement('p');
     dateElement.textContent = dayjs(dayData.dt_txt).format('MM/DD/YYYY');
 
     const iconElement = document.createElement('img');
+    iconElement.classList.add('icon')
     let iconCode = dayData.weather[0].icon;
     if (iconCode.endsWith('n')) {
         iconCode = iconCode.slice(0, -1) + 'd';
@@ -79,6 +80,7 @@ function createForecastDayElement(dayData) {
 
 function createCityButton(city) {
     const button = document.createElement('li');
+    button.classList.add('city-button');
     button.textContent = city;
     button.addEventListener('click', () => {
         getWeatherForCity(city);

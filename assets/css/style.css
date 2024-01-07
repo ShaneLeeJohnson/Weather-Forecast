@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+}
+
+.city-button {
+    width: 100%;
+    background-color: #90e0ef;
+    list-style-type: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.city-button:hover {
+    background-color: #48cae4;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#recent-cities {
+    border-top: 2px solid lightgray;
+}
+
+.forecast-day {
+    background-color: #457b9d;
+    color: white;
+    margin: 5px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+#current-weather {
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+.form-label {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0096c7;
+}
