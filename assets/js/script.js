@@ -10,7 +10,7 @@ const currentWind = document.querySelector('#current-wind');
 const currentHumidity = document.querySelector('#current-humid');
 
 async function fetchGeocodeData(city) {
-    const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=c146dbb949e3984d88cf4996c851d1ec`);
+    const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=c146dbb949e3984d88cf4996c851d1ec`);
     const data = await res.json();
     return ({ lat: data[0].lat, lon: data[0].lon });
 }
