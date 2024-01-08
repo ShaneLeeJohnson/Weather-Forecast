@@ -1,3 +1,4 @@
+/* Centers the header, and adds a blue background. Also bolds the text and changes the text color to white */
 h1 {
     text-align: center;
     background-color: #0077b6;
@@ -5,6 +6,14 @@ h1 {
     font-weight: bold;
 }
 
+/* sets the width of the search button to 100% so that it is as wide as the text input */
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* sets each city button to have a width of 100% a light blue background color and gets rid of the bullet point */
+/* also rounds the edges of the button and centers the text. */
 .city-button {
     width: 100%;
     background-color: #90e0ef;
@@ -15,38 +24,40 @@ h1 {
     text-align: center;
 }
 
+/* makes the button appear more interactable when the user hovers over it by slightly changing
+the background color and changing the mouse to a pointer */
 .city-button:hover {
     background-color: #48cae4;
     cursor: pointer;
 }
 
-.btn {
-    width: 100%;
-    margin-bottom: 10px;
+/* changes the form label to have a font size of 30px be bold and have a blue text color */
+.form-label {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0096c7;
 }
 
-#recent-cities {
-    border-top: 2px solid lightgray;
-}
-
+/* adds a blue background to each forecast day and changes the text color to white */
 .forecast-day {
     background-color: #457b9d;
     color: white;
     margin: 5px;
 }
 
+/* changes the size of the weather icons for each forecast day */
 .icon {
     width: 50px;
     height: 50px;
 }
 
+/* adds a border between the search button and the list of recently searched cities */
+#recent-cities {
+    border-top: 2px solid lightgray;
+}
+
+/* adds a border around the current weather data */
 #current-weather {
     border: 1px solid black;
     padding-left: 5px;
-}
-
-.form-label {
-    font-size: 30px;
-    font-weight: bold;
-    color: #0096c7;
 }

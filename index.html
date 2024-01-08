@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
+    <!-- links to bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -13,38 +14,43 @@
 
 <body>
 
-    <div class="container">
+    <section class="container">
         <h1>Weather Dashboard</h1>
-        <div class="row">
-            <div class="col-12 col-md-3 ">
+        <section class="row">
+            <section class="col-12 col-md-3 ">
+                <!-- form that the user will use to search weather data for the city they enter -->
                 <form id="search-form">
-                    <div class="mb-3">
+                    <section class="mb-3">
                         <label for="city" class="form-label">Search for a City:</label>
                         <input type="text" class="form-control" id="city">
-                    </div>
+                    </section>
                     <button type="submit" class="btn btn-primary px-5">Search</button>
                 </form>
                 <ul id="recent-cities"></ul>
-            </div>
-            <div class="col-12 col-md-9">
+            </section>
+            <section class="col-12 col-md-9">
+                <!-- holds the current weather data -->
                 <section id="current-weather">
                     <h2><span id="city-name"></span><span id="current-date"></span><span id="weather-icon"></span></h2>
                     <p>Temp: <span id="current-temp"></span></p>
                     <p>Wind: <span id="current-wind"></span></p>
                     <p>Humidity: <span id="current-humid"></span></p>
                 </section>
-                <div class="row">
+                <section class="row">
                     <h3>5-Day Forecast:</h3>
-                    <div class="row justify-content-around" id="forecast-container"></div>
-                </div>
-            </div>
-        </div>
+                    <!-- holds the forecast data created in javascript -->
+                    <section class="row justify-content-around" id="forecast-container"></section>
+                </section>
+            </section>
+        </section>
 
-    </div>
+    </section>
 
+    <!-- script for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- script for day.js -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.4/dayjs.min.js"></script>
 
     <script src="assets/js/script.js"></script>
