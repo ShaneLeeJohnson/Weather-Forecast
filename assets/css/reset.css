@@ -1,3 +1,4 @@
+/* gets rid of the default styles for unorderd list and list elements */
 ul,
 li {
     margin: 0;
